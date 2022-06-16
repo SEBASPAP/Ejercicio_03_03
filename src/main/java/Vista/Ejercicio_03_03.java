@@ -5,6 +5,10 @@
 
 package Vista;
 
+import Vista_01.ActorVentana;
+import Vista_01.PeliculaVentana;
+import Vista_01.PersonajeVentana;
+
 /**
  *
  * @author paulp
@@ -12,6 +16,13 @@ package Vista;
 public class Ejercicio_03_03 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        var ventanaActor= new ActorVentana("Panel Principal ACTOR");
+        ventanaActor.setVisible(true);
+        
+        var ventanaPelicula= new PeliculaVentana("Panel Principal PELICULA");
+        ventanaPelicula.setVisible(true);
+        
+        var ventanaPersonaje= new PersonajeVentana("Panel Principal PERSONAJE");
+        ventanaPersonaje.setVisible(true);
     }
 }

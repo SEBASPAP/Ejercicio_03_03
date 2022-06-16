@@ -12,15 +12,11 @@ public class Personaje {
     public String nombre;
     public String funcionPer;
     public String generoMof;
-    Pelicula pelicula;
-    Actor actor;
 
-    public Personaje(String nombre, String funcionPer, String generoMof, Pelicula pelicula, Actor actor) {
+    public Personaje(String nombre, String funcionPer, String generoMof) {
         this.nombre = nombre;
         this.funcionPer = funcionPer;
         this.generoMof = generoMof;
-        this.pelicula = pelicula;
-        this.actor = actor;
     }
 
     public String getNombre() {
@@ -47,21 +43,10 @@ public class Personaje {
         this.generoMof = generoMof;
     }
 
-    public Pelicula getPelicula() {
-        return pelicula;
+    @Override
+    public String toString() {
+        return "Personaje{" + "nombre=" + nombre + ", funcionPer=" + funcionPer + ", generoMof=" + generoMof + '}';
     }
 
-    public void setPelicula(Pelicula pelicula) {
-        this.pelicula = pelicula;
-    }
-
-    public Actor getActor() {
-        return actor;
-    }
-
-    public void setActor(Actor actor) {
-        this.actor = actor;
-    }
-    
-    
+     
 }
